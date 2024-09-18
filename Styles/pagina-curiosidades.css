@@ -4,6 +4,9 @@
     gap: 20px; 
     max-width: 800px; 
     margin: 0 auto;
+    border-radius: 15px;
+    
+    
   }
 
   .container {
@@ -12,11 +15,13 @@
     align-items: center; 
     gap: 20px; 
     padding: 20px;
-    background-color: #f0f0f0; /
+    background-color: #f0f0f0 ;
+    border-radius: 15px; 
+    margin-bottom: 50px;
   }
 
   .container img {
-    width: 100px; 
+    width: 200px; 
     border: 2px solid #ccc; 
     border-radius: 5px; 
   }
@@ -58,6 +63,7 @@
   p{
 
     font-family: itim ;
+    font-size: 25px;
 
   }
 
