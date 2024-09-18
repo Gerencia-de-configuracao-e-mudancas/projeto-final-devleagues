@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>memes</title>
+    <link rel="stylesheet" href="/Styles/pagina-memes.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div id="header"></div>
+    <script>
+    fetch('../header.html')
+    .then(response => response.text())
+    .then(data => {
+    document.getElementById('header').innerHTML = data;
+    });
+    </script>
+    
+    <h1>Memes</h1>
+    <div class="grid-container">
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme1.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme10.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme11.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme12.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme13.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme14.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme15.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme16.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme17.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme2.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme3.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme4.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme6.jpg" ></div>
+        <div class="grid-item"><img src="/Assets/Images-Memes/meme7.jpg" ></div>
+    </div>
+
+
+
+
+
+</body>
+</html>
