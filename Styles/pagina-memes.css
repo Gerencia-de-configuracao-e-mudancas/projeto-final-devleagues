@@ -1,36 +1,80 @@
+html{
+  height: 100%;
+}
+body{
+  
+  margin: 0;
+  min-height: 100vh;
+  background-color: #000085; /* Define a cor de fundo azul */
+  background-attachment: fixed;
+}
+body::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/Assets/Imagem_de_fundo.png');
+  background-size:contain; /* Ajuste conforme necessário */
+  background-position: center;
+  background-repeat: no-repeat;/* Faz com que a imagem não se repita */
+  background-attachment: fixed;
+  z-index: -2; /* Coloca a imagem atrás do gradiente */
+}
+body::after{
+  content: "";
+  position:fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:linear-gradient(to top, rgb(0,0,0, 1),rgb(255,255,255,0));
+  background-attachment: fixed;
+  opacity: 100%;
+  z-index: -1;
+}
 h1{
-    font-size: 36;
-    text-align: center;
-    font-family: itim ;
-   }
- 
-   hr {
-     border: none; 
-     height: 2px; 
-     background-color: black; 
-     width: 80%; 
-     margin: 20px auto; 
-   }
- 
-   .itim-regular {
-     font-family: "Itim", cursive;
-     font-weight: 400;
-     font-style: normal;
-   }
-   .grid-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(5, auto); 
-    gap: 10px; 
-    padding: 20px;
-    justify-content: center; 
-    max-width: 800px; 
-    margin: 0 auto;
-  }
+  color: white;
+  font-size: clamp(30px, 8vw, 96px);
+  text-align: center;
+  font-family: itim ;
+  margin: 74px auto 0  auto;
+  text-shadow: 
+    2px 2px 0 #000,  
+    -2px -2px 0 #000,
+    2px -2px 0 #000,
+    -2px 2px 0 #000;
+ }
+h1::after{
+  content: "";
+  display: block;
+  width: 85%;
+  height: 2px;
+  margin: 0% auto;
+  background-color: #ffffff;
+  margin-top: 5px;
+}
 
-  .grid-item img {
-    width: 100%;
-    height: auto; 
-    border: 2px solid #3498db; 
-    border-radius: 8px; 
-  }
+ .itim-regular {
+   font-family: "Itim", cursive;
+   font-weight: 400;
+   font-style: normal;
+ }
+ .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(5, auto); 
+  gap: 10px; 
+  padding: 20px;
+  justify-content: center; 
+  max-width: 800px; 
+  margin: 0 auto;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%; 
+  border: 2px solid #3498db; 
+  border-radius: 8px; 
+}
