@@ -1,0 +1,36 @@
+h1{
+    font-size: 36;
+    text-align: center;
+    font-family: itim ;
+   }
+ 
+   hr {
+     border: none; 
+     height: 2px; 
+     background-color: black; 
+     width: 80%; 
+     margin: 20px auto; 
+   }
+ 
+   .itim-regular {
+     font-family: "Itim", cursive;
+     font-weight: 400;
+     font-style: normal;
+   }
+   .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(5, auto); 
+    gap: 10px; 
+    padding: 20px;
+    justify-content: center; 
+    max-width: 800px; 
+    margin: 0 auto;
+  }
+
+  .grid-item img {
+    width: 100%;
+    height: auto; 
+    border: 2px solid #3498db; 
+    border-radius: 8px; 
+  }
