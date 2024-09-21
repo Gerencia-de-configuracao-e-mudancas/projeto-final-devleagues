@@ -19,3 +19,7 @@ Css
 *Leonardo Tavares* <br>
 [Instagram](https://www.instagram.com/leonardo_tavares/) <br>
 [Linkedin](https://www.linkedin.com/in/leonardo-tavares-696240289/) <br>
+
+*Lauan Victor* <br>
+[Instagram](https://www.instagram.com/lauan.vi_tor/) <br>
+[Linkedin](https://www.linkedin.com/in/lauan-victor-6886b9198/) <br>
