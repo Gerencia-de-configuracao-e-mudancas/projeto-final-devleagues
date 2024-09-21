@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,15 +8,43 @@
     <link rel="stylesheet" href="/Styles/episodios-classicos.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div id="header"></div>
-        <script>
-            fetch('../header.html')
-            .then(response => response.text())
-            .then(data => {
+    <script>
+        fetch('../header.html')
+        .then(response => response.text())
+        .then(data => {
             document.getElementById('header').innerHTML = data;
         });
     </script>
     <h1>Episódios Clássicos</h1>
+    <div class="container">
+        <div class="box">
+            <img src="/Assets/Imagens-EpisodiosClassicos/BarbeiroSevilla.jpg" alt="Episódio Barbeiro em Sevilla">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=UpIz6f6iuDw'">Assistir no YouTube</button>
+        </div>
+        <div class="box">
+            <img src="/Assets/Imagens-EpisodiosClassicos/AzaresDeUmCorvo.jpg" alt="Episódio Azares de um corvo">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=NcBb12z0lMg'">Assistir no YouTube</button>
+        </div>
+        <div class="box">
+            <img src="/Assets/Imagens-EpisodiosClassicos/PicaPauBiruta.jpg" alt="Episódio Pica-Pau Biruta">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=f4VLjEdB0Ug'">Assistir no YouTube</button>
+        </div>
+        <div class="box">
+            <img src="/Assets/Imagens-EpisodiosClassicos/NiagaraFalls.jpg" alt="Episódio Cataratas do Niágara">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=hL5OkqZ4L7U'">Assistir no YouTube</button>
+        </div>
+        <div class="box">
+            <img src="/Assets/Imagens-EpisodiosClassicos/BebeAbutre.jpg" alt="Episódio Bebê Abutre">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=zqd3yxBIi_A'">Assistir no YouTube</button>
+        </div>
+        <div class="box">
+            <img src="/Assets/Imagens-EpisodiosClassicos/AVassouraDaBruxa.jpg" alt="Episódio A Vassou da Bruxa">
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=4qZgTsqCCAs'">Assistir no YouTube</button>
+        </div>
+    </div>
+
 </body>
 </html>
