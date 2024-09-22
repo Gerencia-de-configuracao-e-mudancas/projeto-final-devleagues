@@ -93,6 +93,7 @@ body::after{
     display: grid;
     position: relative;
     margin-top:200px ;
+    margin-bottom: 200px;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     align-items: center;
