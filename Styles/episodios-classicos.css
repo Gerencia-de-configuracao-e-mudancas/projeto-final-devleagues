@@ -45,6 +45,7 @@ h1 {
     text-align: center;
     margin: 40px 0 10px 0;
     width: 100%;
+    font-family: itim;
     text-shadow:
         2px 2px 0 #000,
         -2px -2px 0 #000,
@@ -72,6 +73,7 @@ h1::after {
     justify-content: center; /* Centraliza o contêiner na página */
     padding: 20px;
     margin-top: 20px; /* Adiciona espaço acima da grade */
+    margin-bottom: 20px;
 }
 
 .box {
