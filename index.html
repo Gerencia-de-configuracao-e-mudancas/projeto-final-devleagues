@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/Styles/pagina-inicial.css">
+    <link rel="stylesheet" href="Styles/pagina-inicial.css">
     <link rel="shortcut icon" href="/Assets/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,7 +13,7 @@
 <body>
     <div id="header"></div>
     <script>
-    fetch('/Pages/header.html')
+    fetch('Pages/header.html')
     .then(response => response.text())
     .then(data => {
     document.getElementById('header').innerHTML = data;
@@ -33,25 +33,25 @@
         <h1 class="Titulos">Evolução do personagem</h1>
         <h2 class="subtitulos-evolucao">1940-1950</h2>
         <div class="video-container">
-            <img src="/Assets/Images-PaginaInicial/Pica-pau_1940.jpg" alt="imagem" class="imgs-evolucao">
+            <img src="Assets/Images-PaginaInicial/Pica-pau_1940.jpg" alt="imagem" class="imgs-evolucao">
             <video class="video" muted loop autoplay playsinline preload="none" >
-                <source src="/Assets//Images-PaginaInicial/Pica-pau_1940.mp4" type="video/mp4">
+                <source src="Assets//Images-PaginaInicial/Pica-pau_1940.mp4" type="video/mp4">
             </video>
         </div>
         
         <h2 class="subtitulos-evolucao">1960-1970</h2>
         <div class="video-container">
-            <img src="/Assets/Images-PaginaInicial/Pica-pau_1960.png" alt="" class="imgs-evolucao">
+            <img src="Assets/Images-PaginaInicial/Pica-pau_1960.png" alt="" class="imgs-evolucao">
             <video class="video" muted loop autoplay playsinline preload="none">
-                <source src="/Assets/Images-PaginaInicial/Pica-pau_1960.mp4" type="video/mp4">
+                <source src="Assets/Images-PaginaInicial/Pica-pau_1960.mp4" type="video/mp4">
             </video>
         </div>
         
         <h2 class="subtitulos-evolucao">2000</h2>
         <div class="video-container">
-            <img src="/Assets/Images-PaginaInicial/Pica-pau_2000.jpg" alt="" class="imgs-evolucao">   
+            <img src="Assets/Images-PaginaInicial/Pica-pau_2000.jpg" alt="" class="imgs-evolucao">   
             <video class="video" muted loop autoplay playinsline preload="none">
-                <source src="/Assets/Images-PaginaInicial/Pica-pau_2000.mp4" type="video/mp4">
+                <source src="Assets/Images-PaginaInicial/Pica-pau_2000.mp4" type="video/mp4">
 
             </video>
         </div>
@@ -59,7 +59,7 @@
     </section>
     <div id="footer"></div>
     <script>
-        fetch('/Pages/footer.html')
+        fetch('Pages/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
