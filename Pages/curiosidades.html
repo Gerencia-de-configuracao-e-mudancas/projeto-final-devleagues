@@ -17,7 +17,7 @@
 
     <div id="header"></div>
     <script>
-    fetch('../header.html')
+    fetch('/Pages/header.html')
     .then(response => response.text())
     .then(data => {
     document.getElementById('header').innerHTML = data;
@@ -25,11 +25,8 @@
     </script>
     <section>
           
-
         <h1>Curiosidades</h1>
-
-       
-        
+ 
         <div class="main-container">
            
         <div class="container">
@@ -60,7 +57,7 @@
     </section>
     <div id="footer"></div>
     <script>
-        fetch('/footer.html')
+        fetch('/Pages/footer.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('footer').innerHTML = data;
