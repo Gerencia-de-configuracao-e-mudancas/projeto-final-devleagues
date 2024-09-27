@@ -102,7 +102,7 @@ body::after{
 }
 .subtitulos-evolucao{
     color: rgb(255, 255, 255);
-    margin: 110px auto 0px auto;
+    margin: auto auto 0px auto;
     text-shadow: 
     2px 2px 0 #000000,  
     -2px -2px 0 #000000,
@@ -115,7 +115,7 @@ body::after{
 }
 .video-container{
     position: relative;
-    margin: auto;
+    margin: auto auto 100px auto;
     width: 80%;
     height: 45vw;  
 }

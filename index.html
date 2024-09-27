@@ -4,39 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/pagina-inicial.css">
-    <link rel="stylesheet" href="./Styles/header.css">
-    <link rel="stylesheet" href="./Styles/footer.css">
-    <link rel="shortcut icon" href="./Assets/Favicon.png">
+    <link rel="shortcut icon" href="/Assets/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
     <title>Picapauers Fans</title>
 </head>
 <body>
-    <header id="Cabeçalho">
-        <a href="./index.html">
-             <img id="img_cbc" src="./Assets/Images-PaginaInicial/Imagem_cabeçalho.png" >
-        </a> 
-        <div id="menu">
-            <a href="./Pages/episodios-classicos.html">
-                <ul id="Sessão">Episódios Clássicos</ul>
-            </a>
-            <a href="./Pages/curiosidades.html">
-                 <ul id="Sessão">Curiosidades</ul>
-            </a>
-            
-            <a href="./Pages/memes.html">
-                <ul id="Sessão">Memes</ul>
-            </a>
-            
-        </div>
-        <div id="menu_mob">
-            <span class="linha"></span>
-            <span class="linha"></span>
-            <span class="linha"></span>
-        </div>
-        
-    </header>
+    
+    <div id="header"></div>
+    <script>
+        fetch('/Pages/header.html')
+        .then(response => response.text())
+        .then(data=>{
+            document.getElementById('header').innerHTML = data;
+        });
+    </script>
 
     <section id="Historia-Biografia">
         <h1 class="Titulos">História e Biografia</h1>
@@ -53,7 +36,7 @@
         <div class="video-container">
             <img src="Assets/Images-PaginaInicial/Pica-pau_1940.jpg" alt="imagem" class="imgs-evolucao">
             <video class="video" muted loop autoplay playsinline preload="none" >
-                <source src="Assets//Images-PaginaInicial/Pica-pau_1940.mp4" type="video/mp4">
+                <source src="Assets/Images-PaginaInicial/Pica-pau_1940.mp4" type="video/mp4">
             </video>
         </div>
         
@@ -74,43 +57,13 @@
             </video>
         </div>
         
-    <footer id="footer">
-        <h2>Devs &lt;/&gt;</h2>
-        <div class="footer-columns">
-            <div class="footer-column">
-                <h3>Camila Santos</h3>
-                <a href="https://www.instagram.com/camyss_santos/">
-                    <img src="./Assets/instagram-icon.png" alt="Instagram" width="24" height="24">
-                    camyss_santos
-                </a>
-                <a href="https://www.linkedin.com/in/camila-santos-486b41253/">
-                    <img src="./Assets/linkedin-icon.png" alt="LinkedIn" width="24" height="24">
-                    Camila Santos
-                </a>
-            </div>
-            <div class="footer-column">
-                <h3>Leonardo Tavares</h3>
-                <a href="https://www.instagram.com/_leonardo_tavares_/">
-                    <img src="./Assets/instagram-icon.png" alt="Instagram" width="24" height="24">
-                    _leonardo_tavares_
-                </a>
-                <a href="https://www.linkedin.com/in/leonardo-tavares-696240289/">
-                    <img src="./Assets/linkedin-icon.png" alt="LinkedIn" width="24" height="24">
-                    Leonardo Tavares
-                </a>
-            </div>
-            <div class="footer-column">
-                <h3>Lauan Victor</h3>
-                <a href="https://instagram.com/lauan.vi_tor/">
-                    <img src="./Assets/instagram-icon.png" alt="Instagram" width="24" height="24">
-                    lauan.vi_tor
-                </a>
-                <a href="https://www.linkedin.com/in/lauan-victor-6886b9198/">
-                    <img src="./Assets/linkedin-icon.png" alt="LinkedIn" width="24" height="24">
-                    Lauan Victor
-                </a>
-            </div>
-        </div>
-    </footer>
+        <div id="footer"></div>
+        <script>
+            fetch('/Pages/footer.html')
+            .then(response => response.text())
+            .then(data =>{
+                document.getElementById('footer').innerHTML = data;
+            });
+        </script>
 </body>
 </html>
