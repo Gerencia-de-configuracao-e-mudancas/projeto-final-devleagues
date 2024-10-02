@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/pagina-inicial.css">
-    <link rel="shortcut icon" href="Assets/Favicon.png">
+    <link rel="shortcut icon" href="/Assets/Favicon.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     
     <div id="header"></div>
     <script>
-        fetch('Pages/header.html')
+        fetch('/Pages/header.html')
         .then(response => response.text())
         .then(data=>{
             document.getElementById('header').innerHTML = data;
@@ -59,7 +59,7 @@
         
         <div id="footer"></div>
         <script>
-            fetch('Pages/footer.html')
+            fetch('/Pages/footer.html')
             .then(response => response.text())
             .then(data =>{
                 document.getElementById('footer').innerHTML = data;
